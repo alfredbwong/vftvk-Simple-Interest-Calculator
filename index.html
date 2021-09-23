@@ -9,40 +9,48 @@
   <body>
     <div class="maindiv">
       <h1>Simple Interest Calculator</h1>
-      <div>Amount <input type="number" id="principal" /> <br /></div>
-      <div>
-        Interest Rate
-        <input
-          onchange="updateRate()"
-          type="range"
-          id="rate"
-          min="1"
-          max="20"
-          value="10.25"
-        />
-        <span id="rate_val"> 10.25% </span>
+      <div class="interest_field_container">
+        <div>
+          <label>Amount</label>
+          <input class="interest_input_field" type="number" id="principal" />
+          <br />
+        </div>
+        <div>
+          <label>Interest Rate</label>
+          <input
+            class="interest_input_field"
+            onchange="updateRate()"
+            type="range"
+            id="rate"
+            min="1"
+            max="20"
+            value="10.25"
+          />
+          <label id="rate_val"> 10.25% </label>
+        </div>
+        <div>
+          <label>No. of Years</label>
+          <select class="interest_input_field" id="years">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div>
+          <button onclick="compute()">Compute Interest</button>
+        </div>
+        <div>
+          <span id="result"></span>
+        </div>
       </div>
-      <div>
-        No. of Years
-        <select id="years">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-      </div>
-      <div>
-        <button onclick="compute()">Compute Interest</button>
-      </div>
-      <div>
-        <span id="result"></span>
-      </div>
+
       <footer>&#169; This Calculator belongs to Alfred Wong</footer>
     </div>
   </body>
