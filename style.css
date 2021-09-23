@@ -15,3 +15,12 @@ h1 {
   border-radius: 25px;
   margin: auto;
 }
+.maindiv > * {
+  padding-bottom: 10px;
+}
+.maindiv > div {
+  margin-left: 10%;
+}
+.highlight {
+  background-color: yellow;
+}

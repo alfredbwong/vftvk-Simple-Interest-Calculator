@@ -17,7 +17,7 @@ function compute() {
       principal +
       "</span>,<br>at an interest rate of <span class='highlight'>" +
       rate +
-      "%</span><br>You will receive an amount of <span class='highlight'>" +
+      "%.</span><br>You will receive an amount of <span class='highlight'>" +
       interest +
       "</span>,<br>in the year <span class='highlight'>" +
       year +
